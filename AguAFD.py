@@ -440,8 +440,8 @@ TOKENS_POSIBLES = [("r_si", automataSi),
                    ("r_opsuma", automataSuma),
                    ("r_opmult", automataMult),
                    ("r_oprel", automataOprel),
-                   ("r_id", automataId),
-                   ("r_num", automataNum)]
+                   ("r_num", automataNum),
+                   ("r_id", automataId)]
 
 
 def lexer(codigo_fuente):
