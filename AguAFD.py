@@ -8,10 +8,12 @@ def automataId(lexema):
     estadoFinal = [1]
     for caracter in lexema:
         if estado == 0 and (
-                caracter == "a" or caracter == "b" or caracter == "c" or caracter == "d" or caracter == "e" or caracter == "f" or caracter == "g" or caracter == "h" or caracter == "i" or caracter == "j" or caracter == "k" or caracter == "l" or caracter == "m" or caracter == "n" or caracter == "o" or caracter == "p" or caracter == "q" or caracter == "r" or caracter == "s" or caracter == "t" or caracter == "u" or caracter == "v" or caracter == "w" or caracter == "x" or caracter == "y" or caracter == "z"):
+                caracter == "a" or caracter == "b" or caracter == "c" or caracter == "d" or caracter == "e" or caracter == "f" or caracter == "g" or caracter == "h" or caracter == "i" or caracter == "j" or caracter == "k" or caracter == "l" or caracter == "m" or caracter == "n" or caracter == "o" or caracter == "p" or caracter == "q" or caracter == "r" or caracter == "s" or caracter == "t" or caracter == "u" or caracter == "v" or caracter == "w" or caracter == "x" or caracter == "y" or caracter == "z"
+                or caracter == "A" or caracter == "B" or caracter == "C" or caracter == "D" or caracter == "E" or caracter == "F" or caracter == "G" or caracter == "H" or caracter == "I" or caracter == "J" or caracter == "K" or caracter == "L" or caracter == "M" or caracter == "N" or caracter == "O" or caracter == "P" or caracter == "Q" or caracter == "R" or caracter == "S" or caracter == "T" or caracter == "U" or caracter == "V" or caracter == "W" or caracter == "X" or caracter == "Y" or caracter == "Z"):
             estado = 1
         elif estado == 1 and (
                 caracter == "a" or caracter == "b" or caracter == "c" or caracter == "d" or caracter == "e" or caracter == "f" or caracter == "g" or caracter == "h" or caracter == "i" or caracter == "j" or caracter == "k" or caracter == "l" or caracter == "m" or caracter == "n" or caracter == "o" or caracter == "p" or caracter == "q" or caracter == "r" or caracter == "s" or caracter == "t" or caracter == "u" or caracter == "v" or caracter == "w" or caracter == "x" or caracter == "y" or caracter == "z"
+                or caracter == "A" or caracter == "B" or caracter == "C" or caracter == "D" or caracter == "E" or caracter == "F" or caracter == "G" or caracter == "H" or caracter == "I" or caracter == "J" or caracter == "K" or caracter == "L" or caracter == "M" or caracter == "N" or caracter == "O" or caracter == "P" or caracter == "Q" or caracter == "R" or caracter == "S" or caracter == "T" or caracter == "U" or caracter == "V" or caracter == "W" or caracter == "X" or caracter == "Y" or caracter == "Z"
                 or caracter == "0" or caracter == "1" or caracter == "2" or caracter == "3" or caracter == "4" or caracter == "5" or caracter == "6" or caracter == "7" or caracter == "8" or caracter == "9" or caracter == "-" or caracter == "_"):
             estado = 1
         else:
@@ -50,7 +52,7 @@ def automataSi(lexema):
     estado = 0
     estadoFinal = [2]
     for caracter in lexema:
-        if estado == 0 and caracter == "S":
+        if estado == 0 and caracter == "s":
             estado = 1
         elif estado == 1 and caracter == "i":
             estado = 2
@@ -69,7 +71,7 @@ def automataEntonces(lexema):
     estado = 0
     estadoFinal = [8]
     for caracter in lexema:
-        if estado == 0 and caracter == "E":
+        if estado == 0 and caracter == "e":
             estado = 1
         elif estado == 1 and caracter == "n":
             estado = 2
@@ -100,7 +102,7 @@ def automataSino(lexema):
     estado = 0
     estadoFinal = [4]
     for caracter in lexema:
-        if estado == 0 and caracter == "S":
+        if estado == 0 and caracter == "s":
             estado = 1
         elif estado == 1 and caracter == "i":
             estado = 2
@@ -123,7 +125,7 @@ def automataFinsi(lexema):
     estado = 0
     estadoFinal = [5]
     for caracter in lexema:
-        if estado == 0 and caracter == "F":
+        if estado == 0 and caracter == "f":
             estado = 1
         elif estado == 1 and caracter == "i":
             estado = 2
@@ -148,7 +150,7 @@ def automataRepetir(lexema):
     estado = 0
     estadoFinal = [7]
     for caracter in lexema:
-        if estado == 0 and caracter == "R":
+        if estado == 0 and caracter == "r":
             estado = 1
         elif estado == 1 and caracter == "e":
             estado = 2
@@ -177,7 +179,7 @@ def automataHasta(lexema):
     estado = 0
     estadoFinal = [5]
     for caracter in lexema:
-        if estado == 0 and caracter == "H":
+        if estado == 0 and caracter == "h":
             estado = 1
         elif estado == 1 and caracter == "a":
             estado = 2
@@ -202,7 +204,7 @@ def automataEqual(lexema):
     estado = 0
     estadoFinal = [5]
     for caracter in lexema:
-        if estado == 0 and caracter == "E":
+        if estado == 0 and caracter == "e":
             estado = 1
         elif estado == 1 and caracter == "q":
             estado = 2
@@ -227,7 +229,7 @@ def automataLeer(lexema):
     estado = 0
     estadoFinal = [4]
     for caracter in lexema:
-        if estado == 0 and caracter == "L":
+        if estado == 0 and caracter == "l":
             estado = 1
         elif estado == 1 and caracter == "e":
             estado = 2
@@ -250,7 +252,7 @@ def automataMostrar(lexema):
     estado = 0
     estadoFinal = [7]
     for caracter in lexema:
-        if estado == 0 and caracter == "M":
+        if estado == 0 and caracter == "m":
             estado = 1
         elif estado == 1 and caracter == "o":
             estado = 2
@@ -279,7 +281,7 @@ def automataFunc(lexema):
     estado = 0
     estadoFinal = [4]
     for caracter in lexema:
-        if estado == 0 and caracter == "F":
+        if estado == 0 and caracter == "f":
             estado = 1
         elif estado == 1 and caracter == "u":
             estado = 2
@@ -302,7 +304,7 @@ def automataFinFunc(lexema):
     estado = 0
     estadoFinal = [7]
     for caracter in lexema:
-        if estado == 0 and caracter == "F":
+        if estado == 0 and caracter == "f":
             estado = 1
         elif estado == 1 and caracter == "i":
             estado = 2
@@ -422,9 +424,7 @@ def automataOprel(lexema):
         return ESTADO_NO_FINAL
 
 
-TOKENS_POSIBLES = [("r_id", automataId),
-                   ("r_num", automataNum),
-                   ("r_si", automataSi),
+TOKENS_POSIBLES = [("r_si", automataSi),
                    ("r_entonces", automataEntonces),
                    ("r_sino", automataSino),
                    ("r_finsi", automataFinsi),
@@ -439,7 +439,9 @@ TOKENS_POSIBLES = [("r_id", automataId),
                    ("r_puntoycoma", automataPuntoyComa),
                    ("r_opsuma", automataSuma),
                    ("r_opmult", automataMult),
-                   ("r_oprel", automataOprel)]
+                   ("r_oprel", automataOprel),
+                   ("r_id", automataId),
+                   ("r_num", automataNum)]
 
 
 def lexer(codigo_fuente):
@@ -483,4 +485,3 @@ def lexer(codigo_fuente):
 
     print(tokens)
     return tokens
-
